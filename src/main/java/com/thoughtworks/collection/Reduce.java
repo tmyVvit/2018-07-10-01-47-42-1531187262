@@ -2,6 +2,7 @@ package com.thoughtworks.collection;
 
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -51,7 +52,8 @@ public class Reduce {
 
     public Double getMedianInLinkList(SingleLink singleLink) {
 //        throw new NotImplementedException();
-
+        //List<Integer> list =  arrayList.stream().sorted().collect(Collectors.toList());
+        return (arrayList.get((arrayList.size()-1)/2)+arrayList.get(arrayList.size()/2))/2.0;
     }
 
     public int getLastOdd() {
